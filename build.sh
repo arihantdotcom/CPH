@@ -50,7 +50,12 @@ cp "$BUILD_DIR/book.synctex.gz" ./book.synctex.gz 2>/dev/null || true
 echo "Done: book.pdf"
 
 if [[ -f assets/cover.pdf && -f assets/back.pdf ]]; then
-  qpdf --empty --pages assets/cover.pdf 1-z book.pdf 1-z assets/back.pdf 1-z \
-    -- "Only Competitive Programmer's Handbook.pdf"
+  # 1. Isolate the pages into a brand new empty container (this strips bookmarks)
+  qpdf --empty --pages assets/cover.pdf 1-z -- cache/cover-clean.pdf
+  qpdf --empty --pages assets/back.pdf 1-z -- cache/back-clean.pdf
+
+  # 2. Merge them together (using book.pdf as the primary source to keep its bookmarks)
+  qpdf book.pdf --pages cache/cover-clean.pdf 1-z book.pdf 1-z cache/back-clean.pdf 1-z -- "Only Competitive Programmer's Handbook.pdf"
+
   echo "Done: Only Competitive Programmer's Handbook.pdf"
 fi
