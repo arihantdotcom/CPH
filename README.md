@@ -12,8 +12,9 @@ official repository.
 - **Page size**: 7 × 9.1875 in (504 × 661.5 pt)
 - **Font families**: body text EB Garamond, headings Open Sans Condensed (ExtraBold), code
   JetBrains Mono Nerd Font
-- **Cover & back pages**: designed externally as separate assets (`assets/cover.pdf`), merged
-  with the typeset book via `pdfunite`. Cover design fonts: Open Sans Condensed,
+- **Cover & back pages**: designed externally as separate assets
+  (`assets/cover.pdf` — front cover and inner title; `assets/back.pdf` — back cover),
+  merged with the typeset book via `qpdf`. Cover design fonts: Open Sans Condensed,
   Red Hat Display, PP Neue Machina, Fonetika Mono
 
 ### Building
@@ -27,7 +28,8 @@ Build the book (and auto-merge the cover and back pages):
 Outputs:
 
 - `book.pdf` — the typeset book (292 pages)
-- `Only Competitive Programmer's Handbook.pdf` — the merged book with cover and back pages (295 pages)
+- `Only Competitive Programmer's Handbook.pdf` — the final book: cover, inner title,
+  typeset book, and back cover merged (295 pages)
 
 To rebuild only one chapter: `./build.sh 7`
 
