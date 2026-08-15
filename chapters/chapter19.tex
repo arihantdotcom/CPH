@@ -60,12 +60,12 @@ has an Eulerian path from node 2 to node 5:
 \path[draw,thick,-] (2) -- (5);
 \path[draw,thick,-] (4) -- (5);
 
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:1.}] {} (1);
-\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[red]left:2.}] {} (4);
-\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[red]south:3.}] {} (5);
-\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[red]left:4.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:5.}] {} (3);
-\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[red]south:6.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:1.}] {} (1);
+\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[softred]left:2.}] {} (4);
+\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[softred]south:3.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[softred]left:4.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:5.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[softred]south:6.}] {} (5);
 \end{tikzpicture}
 \end{center}
 \index{Eulerian circuit}
@@ -105,12 +105,12 @@ has an Eulerian circuit that starts and ends at node 1:
 \path[draw,thick,-] (2) -- (5);
 \path[draw,thick,-] (2) -- (4);
 
-\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[red]left:1.}] {} (4);
-\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[red]south:2.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]right:3.}] {} (5);
-\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[red]south:4.}] {} (3);
-\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[red]north:5.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:6.}] {} (1);
+\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[softred]left:1.}] {} (4);
+\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[softred]south:2.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]right:3.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[softred]south:4.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[softred]north:5.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:6.}] {} (1);
 \end{tikzpicture}
 \end{center}
 
@@ -212,12 +212,12 @@ from node 2 to node 5:
 \path[draw,thick,-] (2) -- (5);
 \path[draw,thick,-] (4) -- (5);
 
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:1.}] {} (3);
-\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[red]south:2.}] {} (5);
-\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[red]south:3.}] {} (4);
-\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[red]left:4.}] {} (1);
-\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[red]north:5.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]left:6.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:1.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[softred]south:2.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[softred]south:3.}] {} (4);
+\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[softred]left:4.}] {} (1);
+\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[softred]north:5.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]left:6.}] {} (5);
 \end{tikzpicture}
 \end{center}
 
@@ -317,9 +317,9 @@ $1 \rightarrow 2 \rightarrow 3 \rightarrow 1$:
 \path[draw,thick,-] (5) -- (6);
 \path[draw,thick,-] (6) -- (7);
 
-\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[red]north:1.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:2.}] {} (3);
-\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[red]east:3.}] {} (1);
+\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[softred]north:1.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:2.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[softred]east:3.}] {} (1);
 \end{tikzpicture}
 \end{center}
 \end{samepage}
@@ -348,12 +348,12 @@ to the circuit:
 \path[draw,thick,-] (5) -- (6);
 \path[draw,thick,-] (6) -- (7);
 
-\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[red]north:1.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]west:2.}] {} (5);
-\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[red]south:3.}] {} (6);
-\path[draw=softred,thick,->,line width=2pt] (6) -- node[font=\small,label={[red]north:4.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:5.}] {} (3);
-\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[red]east:6.}] {} (1);
+\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[softred]north:1.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]west:2.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[softred]south:3.}] {} (6);
+\path[draw=softred,thick,->,line width=2pt] (6) -- node[font=\small,label={[softred]north:4.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:5.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[softred]east:6.}] {} (1);
 \end{tikzpicture}
 \end{center}
 Finally, the algorithm adds the subcircuit
@@ -380,16 +380,16 @@ to the circuit:
 \path[draw,thick,-] (5) -- (6);
 \path[draw,thick,-] (6) -- (7);
 
-\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[red]north:1.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]west:2.}] {} (5);
-\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[red]south:3.}] {} (6);
-\path[draw=softred,thick,->,line width=2pt] (6) -- node[font=\small,label={[red]east:4.}] {} (3);
-\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[red]north:5.}] {} (4);
-\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[red]east:6.}] {} (7);
-\path[draw=softred,thick,->,line width=2pt] (7) -- node[font=\small,label={[red]south:7.}] {} (6);
-\path[draw=softred,thick,->,line width=2pt] (6) -- node[font=\small,label={[red]right:8.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:9.}] {} (3);
-\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[red]east:10.}] {} (1);
+\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[softred]north:1.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]west:2.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[softred]south:3.}] {} (6);
+\path[draw=softred,thick,->,line width=2pt] (6) -- node[font=\small,label={[softred]east:4.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[softred]north:5.}] {} (4);
+\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[softred]east:6.}] {} (7);
+\path[draw=softred,thick,->,line width=2pt] (7) -- node[font=\small,label={[softred]south:7.}] {} (6);
+\path[draw=softred,thick,->,line width=2pt] (6) -- node[font=\small,label={[softred]right:8.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:9.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[softred]east:10.}] {} (1);
 \end{tikzpicture}
 \end{center}
 Now all edges are included in the circuit,
@@ -436,10 +436,10 @@ contains a Hamiltonian path from node 1 to node 3:
 \path[draw,thick,-] (2) -- (5);
 \path[draw,thick,-] (4) -- (5);
 
-\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[red]left:1.}] {} (4);
-\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[red]south:2.}] {} (5);
-\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[red]left:3.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:4.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[softred]left:1.}] {} (4);
+\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[softred]south:2.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[softred]left:3.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:4.}] {} (3);
 \end{tikzpicture}
 \end{center}
 
@@ -464,11 +464,11 @@ that begins and ends at node 1:
 \path[draw,thick,-] (2) -- (5);
 \path[draw,thick,-] (4) -- (5);
 
-\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[red]north:1.}] {} (2);
-\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[red]north:2.}] {} (3);
-\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[red]south:3.}] {} (5);
-\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[red]south:4.}] {} (4);
-\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[red]left:5.}] {} (1);
+\path[draw=softred,thick,->,line width=2pt] (1) -- node[font=\small,label={[softred]north:1.}] {} (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- node[font=\small,label={[softred]north:2.}] {} (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- node[font=\small,label={[softred]south:3.}] {} (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- node[font=\small,label={[softred]south:4.}] {} (4);
+\path[draw=softred,thick,->,line width=2pt] (4) -- node[font=\small,label={[softred]left:5.}] {} (1);
 \end{tikzpicture}
 \end{center}
 
