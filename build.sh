@@ -48,3 +48,9 @@ run_tex final
 cp "$BUILD_DIR/book.pdf" ./book.pdf
 cp "$BUILD_DIR/book.synctex.gz" ./book.synctex.gz 2>/dev/null || true
 echo "Done: book.pdf"
+
+if [[ -f assets/cover.pdf ]]; then
+  qpdf --empty --pages assets/cover.pdf 1-2 book.pdf 1-z assets/cover.pdf 3 \
+    -- "Only Competitive Programmer's Handbook.pdf"
+  echo "Done: Only Competitive Programmer's Handbook.pdf"
+fi
