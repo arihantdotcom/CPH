@@ -3,7 +3,6 @@
 %\includeonly{chapter04,list}
 
 \usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
 \usepackage{listings}
 \usepackage[table]{xcolor}
 \definecolor{linkorange}{HTML}{E67E22}
@@ -13,8 +12,17 @@
 \usepackage{array}
 \usepackage{microtype}
 
-\usepackage{fouriernc}
-\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setmainfont{EBGaramond}[
+  Path=/usr/share/texmf-dist/fonts/opentype/public/ebgaramond/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic,
+]
+\setsansfont{Funnel Display}[Weight=700]
+\setmonofont{JetBrainsMono Nerd Font Mono}[Scale=0.95]
 
 \usepackage{graphicx}
 \usepackage{framed}
@@ -29,7 +37,23 @@
 \usepackage{titlesec}
 
 \usepackage{skak}
-\usepackage[scaled=0.95]{inconsolata}
+\usepackage{ragged2e}
+\makeatletter
+\renewcommand{\RaggedRight}{%
+  \if@raggedtwoe@localhook
+    \let\@raggedtwoe@everyselectfont\@raggedtwoe@everyselectfont@active%
+  \fi
+  \let\\\@raggedtwoe@savedcr
+  \let\@gnewline\@raggedtwoe@saved@gnewline
+  \leftskip\RaggedRightLeftskip
+  \@rightskip\RaggedRightRightskip
+  \rightskip\@rightskip
+  \parfillskip\RaggedRightParfillskip
+  \parindent\RaggedRightParindent
+  \@raggedtwoe@spaceskiptrue
+  \@raggedtwoe@everyselectfont
+  }
+\makeatother
 
 
 \usetikzlibrary{patterns,snakes}
@@ -39,7 +63,7 @@
 \definecolor{strings}{HTML}{00999A}
 \definecolor{comments}{HTML}{990000}
 
-\lstset{language=C++,frame=single,basicstyle=\ttfamily \small,showstringspaces=false,columns=flexible}
+\lstset{language=C++,frame=single,rulecolor=\color{gray!60},framesep=10pt,basicstyle=\ttfamily \small,showstringspaces=false,columns=flexible}
 \lstset{
   literate={ö}{{\"o}}1
            {ä}{{\"a}}1
@@ -54,20 +78,29 @@
     stringstyle=\color{strings}
 }
 
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[2][]{\oldtexttt[#1]{\small #2}}
+
 \date{Draft \today}
 
 \usepackage[a4paper,vmargin=30mm,hmargin=33mm,footskip=15mm]{geometry}
 
-\title{\Huge Competitive Programmer's Handbook}
+\title{\sffamily\Huge Competitive Programmer's Handbook}
 \author{\Large Antti Laaksonen}
 
 \makeindex
 \usepackage[totoc]{idxlayout}
 
+\titleformat{\part}[display]{\sffamily\bfseries\Huge}{\thepart}{1em}{}
+\titleformat{\chapter}[display]{\sffamily\bfseries\huge}{\chaptername\ \thechapter}{1em}{}
+\titleformat{\section}{\sffamily\bfseries\Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\sffamily\bfseries\large}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}
 {\normalfont\large\bfseries\sffamily}{\thesubsection}{1em}{}
 
 \begin{document}
+
+\RaggedRight
 
 %\selectlanguage{finnish}
 
@@ -79,7 +112,9 @@
 \setcounter{tocdepth}{1}
 
 \include{preface}
+\hypersetup{linkcolor=black}
 \tableofcontents
+\hypersetup{linkcolor=linkorange}
 
 \mainmatter
 \pagenumbering{arabic}
