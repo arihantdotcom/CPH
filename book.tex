@@ -1,4 +1,4 @@
-\documentclass[twoside,12pt,a4paper,english]{book}
+\documentclass[twoside,12pt,english]{book}
 
 %\includeonly{chapter04,list}
 
@@ -21,7 +21,7 @@
   ItalicFont=*-Italic,
   BoldItalicFont=*-BoldItalic,
 ]
-\setsansfont{OpenSans_CondLight.ttf}[Path=/usr/local/share/fonts/o/]
+\setsansfont{Open Sans}[Width=Condensed, BoldFeatures={Weight=800}]
 \setmonofont{JetBrainsMono Nerd Font Mono}[Scale=0.95]
 
 \usepackage{graphicx}
@@ -69,7 +69,7 @@
            {ä}{{\"a}}1
            {ü}{{\"u}}1
 }
-\lstset{xleftmargin=20pt,xrightmargin=5pt}
+\lstset{xleftmargin=0pt,xrightmargin=0pt}
 \lstset{aboveskip=12pt,belowskip=8pt}
 
 \lstset{
@@ -83,7 +83,7 @@
 
 \date{Draft \today}
 
-\usepackage[a4paper,vmargin=30mm,hmargin=33mm,footskip=15mm]{geometry}
+\usepackage[paperwidth=7in,paperheight=9.1875in,vmargin=30mm,hmargin=33mm,footskip=15mm]{geometry}
 
 \title{\sffamily\Huge Competitive Programmer's Handbook}
 \author{\Large Antti Laaksonen}
