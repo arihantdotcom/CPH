@@ -121,9 +121,9 @@ from node 1 to node 6:
 \path[draw,thick,->,>=latex] (5) -- (3);
 %\path[draw,thick,->,>=latex] (3) -- (6);
 
-\path[draw=red,thick,->,line width=2pt] (1) -- (2);
-\path[draw=red,thick,->,line width=2pt] (2) -- (3);
-\path[draw=red,thick,->,line width=2pt] (3) -- (6);
+\path[draw=softred,thick,->,line width=2pt] (1) -- (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- (6);
 \end{tikzpicture}
 \end{center}
 
@@ -169,7 +169,7 @@ The next search begins at node 4:
 \path[draw,thick,->,>=latex] (5) -- (3);
 \path[draw,thick,->,>=latex] (3) -- (6);
 
-\path[draw=red,thick,->,line width=2pt] (4) -- (5);
+\path[draw=softred,thick,->,line width=2pt] (4) -- (5);
 \end{tikzpicture}
 \end{center}
 
@@ -239,10 +239,10 @@ The search proceeds as follows:
 \path[draw,thick,->,>=latex] (4) -- (5);
 \path[draw,thick,->,>=latex] (3) -- (6);
 
-\path[draw=red,thick,->,line width=2pt] (1) -- (2);
-\path[draw=red,thick,->,line width=2pt] (2) -- (3);
-\path[draw=red,thick,->,line width=2pt] (3) -- (5);
-\path[draw=red,thick,->,line width=2pt] (5) -- (2);
+\path[draw=softred,thick,->,line width=2pt] (1) -- (2);
+\path[draw=softred,thick,->,line width=2pt] (2) -- (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- (2);
 \end{tikzpicture}
 \end{center}
 The search reaches node 2 whose state is 1,
@@ -342,12 +342,12 @@ Hence, the numbers of paths are as follows:
 \path[draw,thick,->,>=latex] (5) -- (3);
 \path[draw,thick,->,>=latex] (3) -- (6);
 
-\node[color=red] at (1,2.3) {$1$};
-\node[color=red] at (3,2.3) {$1$};
-\node[color=red] at (5,2.3) {$3$};
-\node[color=red] at (1,5.7) {$1$};
-\node[color=red] at (3,5.7) {$2$};
-\node[color=red] at (5,5.7) {$3$};
+\node[color=softred] at (1,2.3) {$1$};
+\node[color=softred] at (3,2.3) {$1$};
+\node[color=softred] at (5,2.3) {$3$};
+\node[color=softred] at (1,5.7) {$1$};
+\node[color=softred] at (3,5.7) {$2$};
+\node[color=softred] at (5,5.7) {$3$};
 \end{tikzpicture}
 \end{center}
 
@@ -420,11 +420,11 @@ using dynamic programming:
 \path[draw,thick,->] (4) -- node[font=\small,label=below:1] {} (5);
 \path[draw,thick,->] (2) -- node[font=\small,label=above:2] {} (3);
 
-\node[color=red] at (0,0.7) {$1$};
-\node[color=red] at (2,0.7) {$1$};
-\node[color=red] at (0,-2.7) {$2$};
-\node[color=red] at (2,-2.7) {$3$};
-\node[color=red] at (4,-1.7) {$3$};
+\node[color=softred] at (0,0.7) {$1$};
+\node[color=softred] at (2,0.7) {$1$};
+\node[color=softred] at (0,-2.7) {$2$};
+\node[color=softred] at (2,-2.7) {$3$};
+\node[color=softred] at (4,-1.7) {$3$};
 \end{tikzpicture}
 \end{center}
 

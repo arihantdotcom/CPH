@@ -123,10 +123,10 @@ and $4 \rightarrow 5$:
 \path[draw,thick,<-] (2) -- node[font=\small,label=left:3] {} (5);
 \path[draw,thick,->] (3) -- node[font=\small,label=left:8] {} (6);
 
-\path[draw=red,thick,-,line width=2pt] (4-.3,3-.3) -- (4+.3,3+.3);
-\path[draw=red,thick,-,line width=2pt] (4-.3,3+.3) -- (4+.3,3-.3);
-\path[draw=red,thick,-,line width=2pt] (4-.3,1-.3) -- (4+.3,1+.3);
-\path[draw=red,thick,-,line width=2pt] (4-.3,1+.3) -- (4+.3,1-.3);
+\path[draw=softred,thick,-,line width=2pt] (4-.3,3-.3) -- (4+.3,3+.3);
+\path[draw=softred,thick,-,line width=2pt] (4-.3,3+.3) -- (4+.3,3-.3);
+\path[draw=softred,thick,-,line width=2pt] (4-.3,1-.3) -- (4+.3,1+.3);
+\path[draw=softred,thick,-,line width=2pt] (4-.3,1+.3) -- (4+.3,1-.3);
 \end{tikzpicture}
 \end{center}
 
@@ -245,10 +245,10 @@ For example, suppose we choose the following path:
 \path[draw,thick,->] (3) edge [bend left=10] node[font=\small,label=right:8] {} (6);
 \path[draw,thick,->] (6) edge [bend left=10] node[font=\small,label=left:0] {} (3);
 
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend left=10] (2);
-\path[draw=red,thick,->,line width=2pt] (2) edge [bend left=10] (3);
-\path[draw=red,thick,->,line width=2pt] (3) edge [bend left=10] (6);
-\path[draw=red,thick,->,line width=2pt] (6) edge [bend left=10] (4);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend left=10] (2);
+\path[draw=softred,thick,->,line width=2pt] (2) edge [bend left=10] (3);
+\path[draw=softred,thick,->,line width=2pt] (3) edge [bend left=10] (6);
+\path[draw=softred,thick,->,line width=2pt] (6) edge [bend left=10] (4);
 \end{tikzpicture}
 \end{center}
 
@@ -330,10 +330,10 @@ In the present example, our next path can be as follows:
 \path[draw,thick,->] (3) edge [bend left=10] node[font=\small,label=right:6] {} (6);
 \path[draw,thick,->] (6) edge [bend left=10] node[font=\small,label=left:2] {} (3);
 
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend left=10] (5);
-\path[draw=red,thick,->,line width=2pt] (5) edge [bend left=10] (2);
-\path[draw=red,thick,->,line width=2pt] (2) edge [bend left=10] (3);
-\path[draw=red,thick,->,line width=2pt] (3) edge [bend left=10] (4);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend left=10] (5);
+\path[draw=softred,thick,->,line width=2pt] (5) edge [bend left=10] (2);
+\path[draw=softred,thick,->,line width=2pt] (2) edge [bend left=10] (3);
+\path[draw=softred,thick,->,line width=2pt] (3) edge [bend left=10] (4);
 \end{tikzpicture}
 \end{center}
 
@@ -754,13 +754,13 @@ The maximum flow for the graph is as follows:
 \path[draw,thick,->] (4b) -- (5a);
 \path[draw,thick,->] (5b) -- (6);
 
-\path[draw=red,thick,->,line width=2pt] (1) -- (2a);
-\path[draw=red,thick,->,line width=2pt] (2a) -- (2b);
-\path[draw=red,thick,->,line width=2pt] (2b) -- (4a);
-\path[draw=red,thick,->,line width=2pt] (4a) -- (4b);
-\path[draw=red,thick,->,line width=2pt] (4b) -- (3a);
-\path[draw=red,thick,->,line width=2pt] (3a) -- (3b);
-\path[draw=red,thick,->,line width=2pt] (3b) -- (6);
+\path[draw=softred,thick,->,line width=2pt] (1) -- (2a);
+\path[draw=softred,thick,->,line width=2pt] (2a) -- (2b);
+\path[draw=softred,thick,->,line width=2pt] (2b) -- (4a);
+\path[draw=softred,thick,->,line width=2pt] (4a) -- (4b);
+\path[draw=softred,thick,->,line width=2pt] (4b) -- (3a);
+\path[draw=softred,thick,->,line width=2pt] (3a) -- (3b);
+\path[draw=softred,thick,->,line width=2pt] (3b) -- (6);
 \end{tikzpicture}
 \end{center}
 
@@ -832,9 +832,9 @@ The size of a maximum matching of this graph is 3:
 \path[draw,thick,-] (3) -- (8);
 \path[draw,thick,-] (4) -- (7);
 
-\path[draw=red,thick,-,line width=2pt] (1) -- (5);
-\path[draw=red,thick,-,line width=2pt] (2) -- (7);
-\path[draw=red,thick,-,line width=2pt] (3) -- (8);
+\path[draw=softred,thick,-,line width=2pt] (1) -- (5);
+\path[draw=softred,thick,-,line width=2pt] (2) -- (7);
+\path[draw=softred,thick,-,line width=2pt] (3) -- (8);
 \end{tikzpicture}
 \end{center}
 
@@ -908,17 +908,17 @@ The maximum flow of this graph is as follows:
 \path[draw,thick,->] (7) -- (b);
 \path[draw,thick,->] (8) -- (b);
 
-\path[draw=red,thick,->,line width=2pt] (1) -- (5);
-\path[draw=red,thick,->,line width=2pt] (2) -- (7);
-\path[draw=red,thick,->,line width=2pt] (3) -- (8);
+\path[draw=softred,thick,->,line width=2pt] (1) -- (5);
+\path[draw=softred,thick,->,line width=2pt] (2) -- (7);
+\path[draw=softred,thick,->,line width=2pt] (3) -- (8);
 
-\path[draw=red,thick,->,line width=2pt] (a) -- (1);
-\path[draw=red,thick,->,line width=2pt] (a) -- (2);
-\path[draw=red,thick,->,line width=2pt] (a) -- (3);
+\path[draw=softred,thick,->,line width=2pt] (a) -- (1);
+\path[draw=softred,thick,->,line width=2pt] (a) -- (2);
+\path[draw=softred,thick,->,line width=2pt] (a) -- (3);
 
-\path[draw=red,thick,->,line width=2pt] (5) -- (b);
-\path[draw=red,thick,->,line width=2pt] (7) -- (b);
-\path[draw=red,thick,->,line width=2pt] (8) -- (b);
+\path[draw=softred,thick,->,line width=2pt] (5) -- (b);
+\path[draw=softred,thick,->,line width=2pt] (7) -- (b);
+\path[draw=softred,thick,->,line width=2pt] (8) -- (b);
 
 \end{tikzpicture}
 \end{center}
@@ -1044,9 +1044,9 @@ with a maximum matching of size 3:
 \path[draw,thick,-] (3) -- (8);
 \path[draw,thick,-] (4) -- (7);
 
-\path[draw=red,thick,-,line width=2pt] (1) -- (5);
-\path[draw=red,thick,-,line width=2pt] (2) -- (7);
-\path[draw=red,thick,-,line width=2pt] (3) -- (6);
+\path[draw=softred,thick,-,line width=2pt] (1) -- (5);
+\path[draw=softred,thick,-,line width=2pt] (2) -- (7);
+\path[draw=softred,thick,-,line width=2pt] (3) -- (6);
 \end{tikzpicture}
 \end{center}
 Now Kőnig's theorem tells us that the size
@@ -1159,10 +1159,10 @@ For example, we can choose the following paths:
 \node[draw, circle] (6) at (2,-2) {6};
 \node[draw, circle] (7) at (4,-2) {7};
 
-\path[draw=red,thick,->,line width=2pt] (1) -- (5);
-\path[draw=red,thick,->,line width=2pt] (5) -- (6);
-\path[draw=red,thick,->,line width=2pt] (6) -- (7);
-\path[draw=red,thick,->,line width=2pt] (3) -- (4);
+\path[draw=softred,thick,->,line width=2pt] (1) -- (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- (6);
+\path[draw=softred,thick,->,line width=2pt] (6) -- (7);
+\path[draw=softred,thick,->,line width=2pt] (3) -- (4);
 \end{tikzpicture}
 \end{center}
 
@@ -1230,10 +1230,10 @@ a maximum matching of size 4:
 \path[draw,thick,->,>=latex] (6b) -- (b);
 \path[draw,thick,->,>=latex] (7b) -- (b);
 
-\path[draw=red,thick,->,line width=2pt] (1a) -- (5b);
-\path[draw=red,thick,->,line width=2pt] (5a) -- (6b);
-\path[draw=red,thick,->,line width=2pt] (6a) -- (7b);
-\path[draw=red,thick,->,line width=2pt] (3a) -- (4b);
+\path[draw=softred,thick,->,line width=2pt] (1a) -- (5b);
+\path[draw=softred,thick,->,line width=2pt] (5a) -- (6b);
+\path[draw=softred,thick,->,line width=2pt] (6a) -- (7b);
+\path[draw=softred,thick,->,line width=2pt] (3a) -- (4b);
 
 \end{tikzpicture}
 \end{center}
@@ -1285,10 +1285,10 @@ For example, the first path may be as follows:
 \node[draw, circle] (6) at (2,-2) {6};
 \node[draw, circle] (7) at (4,-2) {7};
 
-\path[draw=red,thick,->,line width=2pt] (1) -- (5);
-\path[draw=red,thick,->,line width=2pt] (5) -- (6);
-\path[draw=red,thick,->,line width=2pt] (6) -- (3);
-\path[draw=red,thick,->,line width=2pt] (3) -- (4);
+\path[draw=softred,thick,->,line width=2pt] (1) -- (5);
+\path[draw=softred,thick,->,line width=2pt] (5) -- (6);
+\path[draw=softred,thick,->,line width=2pt] (6) -- (3);
+\path[draw=softred,thick,->,line width=2pt] (3) -- (4);
 \end{tikzpicture}
 \end{center}
 And the second path may be as follows:
@@ -1302,8 +1302,8 @@ And the second path may be as follows:
 \node[draw, circle] (6) at (2,-2) {6};
 \node[draw, circle] (7) at (4,-2) {7};
 
-\path[draw=red,thick,->,line width=2pt] (2) -- (6);
-\path[draw=red,thick,->,line width=2pt] (6) -- (7);
+\path[draw=softred,thick,->,line width=2pt] (2) -- (6);
+\path[draw=softred,thick,->,line width=2pt] (6) -- (7);
 \end{tikzpicture}
 \end{center}
 
@@ -1372,29 +1372,29 @@ The matching graph for the above graph is as follows:
 \path[draw,thick,->,>=latex] (6b) -- (b);
 \path[draw,thick,->,>=latex] (7b) -- (b);
 
-\path[draw=red,thick,->,line width=2pt] (1a) -- (5b);
-\path[draw=red,thick,->,line width=2pt] (5a) -- (3b);
-\path[draw=red,thick,->,line width=2pt] (3a) -- (4b);
-\path[draw=red,thick,->,line width=2pt] (2a) -- (6b);
-\path[draw=red,thick,->,line width=2pt] (6a) -- (7b);
+\path[draw=softred,thick,->,line width=2pt] (1a) -- (5b);
+\path[draw=softred,thick,->,line width=2pt] (5a) -- (3b);
+\path[draw=softred,thick,->,line width=2pt] (3a) -- (4b);
+\path[draw=softred,thick,->,line width=2pt] (2a) -- (6b);
+\path[draw=softred,thick,->,line width=2pt] (6a) -- (7b);
 
 
-% \path[draw=red,thick,->,line width=2pt] (1a) -- (6b);
-% \path[draw=red,thick,->,line width=2pt] (1a) -- (7b);
-% \path[draw=red,thick,->,line width=2pt] (1a) -- (3b);
-% \path[draw=red,thick,->,line width=2pt] (1a) -- (4b);
-% \path[draw=red,thick,->,line width=2pt] (5a) -- (6b);
-% \path[draw=red,thick,->,line width=2pt] (5a) -- (7b);
-% \path[draw=red,thick,->,line width=2pt] (5a) -- (3b);
-% \path[draw=red,thick,->,line width=2pt] (5a) -- (4b);
-% \path[draw=red,thick,->,line width=2pt] (6a) -- (7b);
-% \path[draw=red,thick,->,line width=2pt] (6a) -- (7b);
-% \path[draw=red,thick,->,line width=2pt] (6a) -- (3b);
-% \path[draw=red,thick,->,line width=2pt] (3a) -- (4b);
-% \path[draw=red,thick,->,line width=2pt] (2a) -- (6b);
-% \path[draw=red,thick,->,line width=2pt] (2a) -- (7b);
-% \path[draw=red,thick,->,line width=2pt] (2a) -- (3b);
-% \path[draw=red,thick,->,line width=2pt] (2a) -- (4b);
+% \path[draw=softred,thick,->,line width=2pt] (1a) -- (6b);
+% \path[draw=softred,thick,->,line width=2pt] (1a) -- (7b);
+% \path[draw=softred,thick,->,line width=2pt] (1a) -- (3b);
+% \path[draw=softred,thick,->,line width=2pt] (1a) -- (4b);
+% \path[draw=softred,thick,->,line width=2pt] (5a) -- (6b);
+% \path[draw=softred,thick,->,line width=2pt] (5a) -- (7b);
+% \path[draw=softred,thick,->,line width=2pt] (5a) -- (3b);
+% \path[draw=softred,thick,->,line width=2pt] (5a) -- (4b);
+% \path[draw=softred,thick,->,line width=2pt] (6a) -- (7b);
+% \path[draw=softred,thick,->,line width=2pt] (6a) -- (7b);
+% \path[draw=softred,thick,->,line width=2pt] (6a) -- (3b);
+% \path[draw=softred,thick,->,line width=2pt] (3a) -- (4b);
+% \path[draw=softred,thick,->,line width=2pt] (2a) -- (6b);
+% \path[draw=softred,thick,->,line width=2pt] (2a) -- (7b);
+% \path[draw=softred,thick,->,line width=2pt] (2a) -- (3b);
+% \path[draw=softred,thick,->,line width=2pt] (2a) -- (4b);
 
 \end{tikzpicture}
 \end{center}

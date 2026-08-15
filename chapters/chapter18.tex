@@ -43,8 +43,8 @@ $\texttt{ancestor}(2,1)=1$ and $\texttt{ancestor}(8,2)=4$.
 \path[draw,thick,-] (3) -- (7);
 \path[draw,thick,-] (7) -- (8);
 
-\path[draw=red,thick,->,line width=2pt] (8) edge [bend left] (3);
-\path[draw=red,thick,->,line width=2pt] (2) edge [bend right] (1);
+\path[draw=softred,thick,->,line width=2pt] (8) edge [bend left] (3);
+\path[draw=softred,thick,->,line width=2pt] (2) edge [bend right] (1);
 \end{tikzpicture}
 \end{center}
 
@@ -133,22 +133,22 @@ a depth-first search proceeds as follows:
 \path[draw,thick,-] (4) -- (9);
 
 
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend right=15] (2);
-\path[draw=red,thick,->,line width=2pt] (2) edge [bend right=15] (6);
-\path[draw=red,thick,->,line width=2pt] (6) edge [bend right=15] (2);
-\path[draw=red,thick,->,line width=2pt] (2) edge [bend right=15] (1);
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend right=15] (3);
-\path[draw=red,thick,->,line width=2pt] (3) edge [bend right=15] (1);
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend right=15] (4);
-\path[draw=red,thick,->,line width=2pt] (4) edge [bend right=15] (7);
-\path[draw=red,thick,->,line width=2pt] (7) edge [bend right=15] (4);
-\path[draw=red,thick,->,line width=2pt] (4) edge [bend right=15] (8);
-\path[draw=red,thick,->,line width=2pt] (8) edge [bend right=15] (4);
-\path[draw=red,thick,->,line width=2pt] (4) edge [bend right=15] (9);
-\path[draw=red,thick,->,line width=2pt] (9) edge [bend right=15] (4);
-\path[draw=red,thick,->,line width=2pt] (4) edge [bend right=15] (1);
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend right=15] (5);
-\path[draw=red,thick,->,line width=2pt] (5) edge [bend right=15] (1);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend right=15] (2);
+\path[draw=softred,thick,->,line width=2pt] (2) edge [bend right=15] (6);
+\path[draw=softred,thick,->,line width=2pt] (6) edge [bend right=15] (2);
+\path[draw=softred,thick,->,line width=2pt] (2) edge [bend right=15] (1);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend right=15] (3);
+\path[draw=softred,thick,->,line width=2pt] (3) edge [bend right=15] (1);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend right=15] (4);
+\path[draw=softred,thick,->,line width=2pt] (4) edge [bend right=15] (7);
+\path[draw=softred,thick,->,line width=2pt] (7) edge [bend right=15] (4);
+\path[draw=softred,thick,->,line width=2pt] (4) edge [bend right=15] (8);
+\path[draw=softred,thick,->,line width=2pt] (8) edge [bend right=15] (4);
+\path[draw=softred,thick,->,line width=2pt] (4) edge [bend right=15] (9);
+\path[draw=softred,thick,->,line width=2pt] (9) edge [bend right=15] (4);
+\path[draw=softred,thick,->,line width=2pt] (4) edge [bend right=15] (1);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend right=15] (5);
+\path[draw=softred,thick,->,line width=2pt] (5) edge [bend right=15] (1);
 
 \end{tikzpicture}
 \end{center}
@@ -564,8 +564,8 @@ is node 2:
 \path[draw,thick,-] (3) -- (7);
 \path[draw,thick,-] (7) -- (8);
 
-\path[draw=red,thick,->,line width=2pt] (6) edge [bend left] (3);
-\path[draw=red,thick,->,line width=2pt] (8) edge [bend right=40] (3);
+\path[draw=softred,thick,->,line width=2pt] (6) edge [bend left] (3);
+\path[draw=softred,thick,->,line width=2pt] (8) edge [bend right=40] (3);
 \end{tikzpicture}
 \end{center}
 
@@ -607,7 +607,7 @@ which is at the same level with node 5:
 \path[draw,thick,-] (3) -- (7);
 \path[draw,thick,-] (7) -- (8);
 
-\path[draw=red,thick,->,line width=2pt] (8) edge [bend right] (7);
+\path[draw=softred,thick,->,line width=2pt] (8) edge [bend right] (7);
 \end{tikzpicture}
 \end{center}
 
@@ -639,8 +639,8 @@ which is the lowest common ancestor:
 \path[draw,thick,-] (3) -- (7);
 \path[draw,thick,-] (7) -- (8);
 
-\path[draw=red,thick,->,line width=2pt] (6) edge [bend left] (3);
-\path[draw=red,thick,->,line width=2pt] (7) edge [bend right] (3);
+\path[draw=softred,thick,->,line width=2pt] (6) edge [bend left] (3);
+\path[draw=softred,thick,->,line width=2pt] (7) edge [bend right] (3);
 \end{tikzpicture}
 \end{center}
 
@@ -676,20 +676,20 @@ using a depth-first search:
 \path[draw,thick,-] (3) -- (7);
 \path[draw,thick,-] (7) -- (8);
 
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend right=15] (3);
-\path[draw=red,thick,->,line width=2pt] (3) edge [bend right=15] (6);
-\path[draw=red,thick,->,line width=2pt] (6) edge [bend right=15] (3);
-\path[draw=red,thick,->,line width=2pt] (3) edge [bend right=15] (7);
-\path[draw=red,thick,->,line width=2pt] (7) edge [bend right=15] (8);
-\path[draw=red,thick,->,line width=2pt] (8) edge [bend right=15] (7);
-\path[draw=red,thick,->,line width=2pt] (7) edge [bend right=15] (3);
-\path[draw=red,thick,->,line width=2pt] (3) edge [bend right=15] (1);
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend right=15] (4);
-\path[draw=red,thick,->,line width=2pt] (4) edge [bend right=15] (1);
-\path[draw=red,thick,->,line width=2pt] (1) edge [bend right=15] (2);
-\path[draw=red,thick,->,line width=2pt] (2) edge [bend right=15] (5);
-\path[draw=red,thick,->,line width=2pt] (5) edge [bend right=15] (2);
-\path[draw=red,thick,->,line width=2pt] (2) edge [bend right=15] (1);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend right=15] (3);
+\path[draw=softred,thick,->,line width=2pt] (3) edge [bend right=15] (6);
+\path[draw=softred,thick,->,line width=2pt] (6) edge [bend right=15] (3);
+\path[draw=softred,thick,->,line width=2pt] (3) edge [bend right=15] (7);
+\path[draw=softred,thick,->,line width=2pt] (7) edge [bend right=15] (8);
+\path[draw=softred,thick,->,line width=2pt] (8) edge [bend right=15] (7);
+\path[draw=softred,thick,->,line width=2pt] (7) edge [bend right=15] (3);
+\path[draw=softred,thick,->,line width=2pt] (3) edge [bend right=15] (1);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend right=15] (4);
+\path[draw=softred,thick,->,line width=2pt] (4) edge [bend right=15] (1);
+\path[draw=softred,thick,->,line width=2pt] (1) edge [bend right=15] (2);
+\path[draw=softred,thick,->,line width=2pt] (2) edge [bend right=15] (5);
+\path[draw=softred,thick,->,line width=2pt] (5) edge [bend right=15] (2);
+\path[draw=softred,thick,->,line width=2pt] (2) edge [bend right=15] (1);
 \end{tikzpicture}
 \end{center}
 
@@ -885,9 +885,9 @@ For example, consider the distance of nodes 5 and 8:
 \path[draw,thick,-] (3) -- (7);
 \path[draw,thick,-] (7) -- (8);
 
-\path[draw=red,thick,-,line width=2pt] (8) -- node[font=\small] {} (7);
-\path[draw=red,thick,-,line width=2pt] (7) -- node[font=\small] {} (3);
-\path[draw=red,thick,-,line width=2pt] (6) -- node[font=\small] {} (3);
+\path[draw=softred,thick,-,line width=2pt] (8) -- node[font=\small] {} (7);
+\path[draw=softred,thick,-,line width=2pt] (7) -- node[font=\small] {} (3);
+\path[draw=softred,thick,-,line width=2pt] (6) -- node[font=\small] {} (3);
 \end{tikzpicture}
 \end{center}
 
