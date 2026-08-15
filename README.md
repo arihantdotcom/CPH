@@ -3,6 +3,8 @@
 Competitive Programmer's Handbook is a modern introduction to competitive programming.
 The book discusses programming tricks and algorithm design techniques relevant in competitive programming.
 
+<img src="./assets/Cover.png" width="500px"/>
+
 ## Getting the book
 
 **Option 1 — download the prebuilt PDF.** Grab the latest ready-made copy from the
@@ -72,5 +74,5 @@ https://cses.fi/problemset/
 
 ## License
 
-The license of the book is Creative Commons BY-SA 4.0.
+The license of the book is [Creative Commons BY-SA 4.0.](./LICENSE)
 
