@@ -1,0 +1,6 @@
+{
+  "latex-workshop.latex.external.build.command": "./build.sh",
+  "latex-workshop.latex.external.build.args": [],
+  "latex-workshop.latex.build.forceRecipeUsage": false,
+  "latex-workshop.latex.autoBuild.run": "never"
+}

@@ -6,9 +6,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
 \usepackage[table]{xcolor}
+\definecolor{linkorange}{HTML}{E67E22}
 \usepackage{tikz}
 \usepackage{multicol}
-\usepackage{hyperref}
+\usepackage[colorlinks=true, linkcolor=linkorange, urlcolor=linkorange, citecolor=linkorange, breaklinks=true]{hyperref}
 \usepackage{array}
 \usepackage{microtype}
 
@@ -76,9 +77,9 @@
 \frontmatter
 \maketitle
 \setcounter{tocdepth}{1}
-\tableofcontents
 
 \include{preface}
+\tableofcontents
 
 \mainmatter
 \pagenumbering{arabic}
