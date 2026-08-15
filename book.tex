@@ -21,7 +21,7 @@
   ItalicFont=*-Italic,
   BoldItalicFont=*-BoldItalic,
 ]
-\setsansfont{Funnel Display}[Weight=700]
+\setsansfont{OpenSans_CondLight.ttf}[Path=/usr/local/share/fonts/o/]
 \setmonofont{JetBrainsMono Nerd Font Mono}[Scale=0.95]
 
 \usepackage{graphicx}
@@ -79,7 +79,7 @@
 }
 
 \let\oldtexttt\texttt
-\renewcommand{\texttt}[2][]{\oldtexttt[#1]{\small #2}}
+\renewcommand{\texttt}[1]{\oldtexttt{\small #1}}
 
 \date{Draft \today}
 
